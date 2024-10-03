@@ -23,10 +23,11 @@ O desafio consistiu em criar uma experiência interativa que permitisse aos usu�
 
 ## 🏆 Aprendizados 
 
-- Seleção de Elementos com forEach
-- Tempo de Transição com setTimeout
-- Estrutura de Dados
-- Eventos de Clique
+- Seleção de elementos com forEach
+- Tempo de transição com setTimeout
+- Eventos de clique/alternância com método toggle da DOMTokenList
+- Estrutura de dados utilizando a propriedade textContent 
+
 
 <br />
 
