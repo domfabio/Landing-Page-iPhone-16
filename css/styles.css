@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --blue-gradient: linear-gradient(180deg, rgb(12 18 71), rgb(40 51 125) 28%, rgb(80 93 173) 46%, rgb(125 142 209) 60%, rgb(174 188 230) 75%, rgb(239 236 255) 90%, rgb(255 255 255));
+    --white: #fff;
+    --blue-medium: #0071E3;
+    --gray: #1d1d1d;
+    --border-shadow: inset 0px 2px 1px rgba(36, 36, 36, 0.32);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--gray);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    height: 44px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+#navbar a {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+#navbar a:hover {
+    opacity: 1;
+}
+
+.hero-section {
+    background-image: var(--blue-gradient);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: -44px;
+    margin-bottom: 100px;
+    z-index: 3;
+}
+
+.hero-section .action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-hero {
+    max-width: 1000px;
+    margin: -90px auto 0;
+    animation: fade-in-up 1.2s forwards;
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#iphone-hero {
+    max-width: 920px;
+    margin: -265px auto 0;
+    z-index: 1;
+    opacity: 0;
+    animation: fade-in-up-hero 1.2s forwards;
+}
+
+@keyframes fade-in-up-hero {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.action button {
+    height: 44px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 60px 0 25px;
+    border: none;
+    background-color: var(--blue-medium);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.action button:hover {
+    opacity: 0.8;
+}
+
+.action p {
+    font-weight: 600;
+}
+
+.action p span {
+    font-size: 0.6rem;
+    font-weight: bold;
+    vertical-align: 0.25rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.section-change-colors {
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#product-image {
+    display: flex;
+    margin: 3rem auto;
+    opacity: 1;
+    transition: 0.5s;
+    height: 517px;
+}
+
+#main-content #product-image.changing {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+#image-picker {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-change p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    transition: 5s;
+}
+
+#image-picker ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: rgba(177, 177, 177, 0.085);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#image-picker li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#image-picker li .color {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: var(--border-shadow);
+}
+
+#image-picker li .description {
+    font-size: 0.7rem;
+    margin-top: 0.6rem;
+}
+
+#colors .color {
+    background: linear-gradient(#6467e6 25%, #85adac 45%, #ee94ca 60%, #e7e7e7 80%, rgb(172, 172, 172) 100%);
+}
+
+#blue .color {
+    background-color: #6467e6;
+}
+
+#green .color {
+    background-color: #85adac;
+}
+
+#pink .color {
+    background-color: #ee94ca;
+}
+
+#white .color {
+    background-color: #e7e7e7;
+}
+
+#gray .color {
+    background-color: #464646;
+}
+
+.selected {
+    border: 2px solid var(--white);
+    outline: 3px solid #43a1ff;
+    transition: 0.1s;
+}
