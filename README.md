@@ -23,10 +23,10 @@ O desafio consistiu em criar uma experiência interativa que permitisse aos usu�
 
 ## 🏆 Aprendizados 
 
-- Seleção de Elementos
+- Seleção de Elementos com forEach
+- Tempo de Transição com setTimeout
 - Estrutura de Dados
 - Eventos de Clique
-- Tempo de Transição com setTimeout
 
 <br />
 
@@ -40,7 +40,7 @@ O desafio consistiu em criar uma experiência interativa que permitisse aos usu�
 
 ## 🔗 Projeto On-line
 Este projeto está disponível para visualização on-line. <br />
-Você pode acessá-lo através do link: https://gerador-qrcode-js-api.vercel.app/
+Você pode acessá-lo através do link: https://iphone16-vert.vercel.app/
 
 <br />
 
