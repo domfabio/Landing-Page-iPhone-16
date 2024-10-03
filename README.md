@@ -25,7 +25,7 @@ O desafio consistiu em criar uma experiência interativa que permitisse aos usu�
 
 - Seleção de elementos com forEach
 - Tempo de transição com setTimeout
-- Eventos de clique/alternância com método toggle da DOMTokenList
+- Eventos de clique/alternância com método toggle
 - Estrutura de dados utilizando a propriedade textContent 
 
 
